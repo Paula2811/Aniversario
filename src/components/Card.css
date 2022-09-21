@@ -9,7 +9,8 @@
 .titulo{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    flex-wrap: wrap;
+    width: 50%;
 }
 h1{
     font-size: 5rem;
@@ -17,11 +18,12 @@ h1{
 }
 
 .texto{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.4;
 }
 
 .imagen{
     width: 800px;
     height: 1000px;
+    align-self: center;;
 } 
