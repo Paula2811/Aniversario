@@ -1,0 +1,27 @@
+.div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+h1{
+    font-size: 5rem;
+
+}
+
+.texto{
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.imagen{
+    width: 800px;
+    height: 1000px;
+} 

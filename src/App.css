@@ -1,0 +1,53 @@
+body{
+    background-color: #16161a;
+    font-family: 'Roboto', sans-serif;
+    color: white
+}
+.card{
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    grid-template-areas: "main";
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+.card > * {
+    grid-area: main;
+}
+
+.card > .image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: transform 400ms, filter 400ms;
+}
+
+.card > .text{
+    opacity: 0;
+    color: white;
+    font-size: 1.5em;
+    transition: opacity 400ms, transform 400ms;
+}
+
+.card:is(:hover, :focus) > .image{
+    transform: scale(1.1);
+    filter: brightness(0.4);
+}
+
+.card:is(:hover, :focus) > .text{
+    transform: scale(0.9);
+    opacity: 1;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
